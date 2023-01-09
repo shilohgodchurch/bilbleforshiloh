@@ -50,18 +50,18 @@ go build .
 
 ### `npm run serve`
 
-Start a server at `http://localhost:8080`. Equivalent to
+Start a server at `http://localhost:8087`. Equivalent to
 
 ```bash
 ./main
 ```
 
-Then open `http://localhost:8080`.
+Then open `http://localhost:8087`.
 
 You can change the host and port as
 
 ```bash
-./main -host 127.0.0.1 -port 8080
+./main -host 127.0.0.1 -port 8087
 ```
 
 ### `npm run quickstart`
@@ -76,19 +76,20 @@ Generate a Docker image then run it. Do not require running `npm run setup` and 
 
 ```bash
 docker build . -t svelte-ts-go -f Dockerfile
-docker run -p 8080:8080 --rm svelte-ts-go
+docker run -p 8087:8087 --rm svelte-ts-go
 ```
 
-Then open `http://localhost:8080`.
+Then open `http://localhost:8087`.
 
 ## (Git Commands Notes for Self)
 
 ```bash
-git clone https://github.com/alankrantas/svelteapp-typescript-go.git
+git clone git clone https://github.com/shilohgodchurch/bilbleforshiloh.git
 git pull origin master
 git add .
 git commit -m "Updating"
-git remote add origin https://github.com/alankrantas/svelteapp-typescript-go.git
+git remote add origin git clone https://github.com/shilohgodchurch/bilbleforshiloh.git
+
 git push origin master
 ```
 
