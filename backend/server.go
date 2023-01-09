@@ -21,7 +21,7 @@ func Server() {
 
 	// read command-line flags
 	host := flag.String("host", "localhost", "Server host")
-	port := flag.Int("port", 8080, "Server port")
+	port := flag.Int("port", 8087, "Server port")
 	docker := flag.Bool("docker", false, "Running in docker")
 	flag.Parse()
 
@@ -43,8 +43,8 @@ func Server() {
 
 	var serverPath string
 	if *docker {
-		serverPath = "0.0.0.0:8080"
-		log.Println("Server started at http://localhost:8080 ...")
+		serverPath = "0.0.0.0:8087"
+		log.Println("Server started at http://localhost:8087 ...")
 	} else {
 		serverPath = fmt.Sprintf("%s:%d", *host, *port)
 		log.Printf("Server started at http://%s ...\n", serverPath)
